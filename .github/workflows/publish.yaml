@@ -38,4 +38,4 @@ jobs:
           uvx --from build pyproject-build --installer uv
 
       - name: Publish to PyPi
-        uses: pypa/gh-action-pypi-publish@v1.10.0
+        uses: pypa/gh-action-pypi-publish@v1.10.2

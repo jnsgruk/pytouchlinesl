@@ -268,7 +268,7 @@
           "currentTemperature": 221,
           "setTemperature": 180,
           "flags": {
-            "relayState": "off",
+            "relayState": "on",
             "minOneWindowOpen": false,
             "algorithm": "heating",
             "floorSensor": 0,

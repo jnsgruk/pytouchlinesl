@@ -112,6 +112,11 @@ class Zone:
 
         return self._schedule
 
+    @property
+    def relay_on(self) -> bool:
+        """Return whether or not the zone's relay is on."""
+        return self._raw_data.zone.flags.relay_state == "on"
+
     async def set_temperature(self, temperature: float):
         """Set a constant target temperature for the zone."""
         await self._client.set_zone_temperature(

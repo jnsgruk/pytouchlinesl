@@ -6,6 +6,7 @@ test_attrs = [
     ("humidity", 61.0),
     ("mode", "globalSchedule"),
     ("enabled", True),
+    ("relay_on", True),
 ]
 
 

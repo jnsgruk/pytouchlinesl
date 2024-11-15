@@ -404,7 +404,7 @@ wheels = [
 
 [[package]]
 name = "pytouchlinesl"
-version = "0.1.2"
+version = "0.1.8"
 source = { editable = "." }
 dependencies = [
     { name = "aiohttp" },

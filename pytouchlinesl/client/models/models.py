@@ -30,7 +30,9 @@ class ZoneAttributesModel(BaseModel):
     current_temperature: Optional[int] = Field(..., alias="currentTemperature")
     set_temperature: int = Field(..., alias="setTemperature")
     flags: ZoneFlagsModel
-    zone_state: Literal["zoneOff", "zoneOn", "noAlarm", "zoneUnregistered", "sensorDamaged", "noCommunication"] = Field(..., alias="zoneState")
+    zone_state: Literal[
+        "zoneOff", "zoneOn", "noAlarm", "zoneUnregistered", "sensorDamaged", "noCommunication"
+    ] = Field(..., alias="zoneState")
     signal_strength: Optional[int] = Field(..., alias="signalStrength")
     battery_level: Optional[int] = Field(..., alias="batteryLevel")
     actuators_open: int = Field(..., alias="actuatorsOpen")

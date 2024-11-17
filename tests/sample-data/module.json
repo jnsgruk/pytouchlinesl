@@ -275,7 +275,7 @@
             "humidityAlgorytm": 0,
             "zoneExcluded": 0
           },
-          "zoneState": "noAlarm",
+          "zoneState": "zoneOn",
           "signalStrength": 53,
           "batteryLevel": 100,
           "actuatorsOpen": 0,
@@ -467,7 +467,7 @@
             "humidityAlgorytm": 0,
             "zoneExcluded": 0
           },
-          "zoneState": "noAlarm",
+          "zoneState": "sensorDamaged",
           "signalStrength": 31,
           "batteryLevel": 100,
           "actuatorsOpen": 0,
@@ -659,7 +659,7 @@
             "humidityAlgorytm": 0,
             "zoneExcluded": 0
           },
-          "zoneState": "noAlarm",
+          "zoneState": "noCommunication",
           "signalStrength": 13,
           "batteryLevel": 100,
           "actuatorsOpen": 0,

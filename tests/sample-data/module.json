@@ -275,7 +275,7 @@
             "humidityAlgorytm": 0,
             "zoneExcluded": 0
           },
-          "zoneState": "zoneOn",
+          "zoneState": "noAlarm",
           "signalStrength": 53,
           "batteryLevel": 100,
           "actuatorsOpen": 0,

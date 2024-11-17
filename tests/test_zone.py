@@ -7,6 +7,7 @@ test_attrs = [
     ("mode", "globalSchedule"),
     ("enabled", True),
     ("relay_on", True),
+    ("algorithm", "heating"),
 ]
 
 

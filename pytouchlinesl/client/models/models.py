@@ -15,7 +15,7 @@ except ImportError:
 class ZoneFlagsModel(BaseModel):
     relay_state: str = Field(..., alias="relayState")
     min_one_window_open: bool = Field(..., alias="minOneWindowOpen")
-    algorithm: str
+    algorithm: Literal["heating", "cooling"]
     floor_sensor: int = Field(..., alias="floorSensor")
     humidity_algorytm: int = Field(..., alias="humidityAlgorytm")
     zone_excluded: int = Field(..., alias="zoneExcluded")

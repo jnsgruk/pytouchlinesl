@@ -117,6 +117,11 @@ class Zone:
         """Return whether or not the zone's relay is on."""
         return self._raw_data.zone.flags.relay_state == "on"
 
+    @property
+    def algorithm(self) -> Literal["heating", "cooling"]:
+        """Return the zone's current algorithm, either `heating` or `cooling`."""
+        return self._raw_data.zone.flags.algorithm
+
     async def set_temperature(self, temperature: float):
         """Set a constant target temperature for the zone."""
         await self._client.set_zone_temperature(

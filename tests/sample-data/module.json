@@ -462,7 +462,7 @@
           "flags": {
             "relayState": "off",
             "minOneWindowOpen": false,
-            "algorithm": "heating",
+            "algorithm": "cooling",
             "floorSensor": 0,
             "humidityAlgorytm": 0,
             "zoneExcluded": 0

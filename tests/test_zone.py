@@ -8,6 +8,8 @@ test_attrs = [
     ("enabled", True),
     ("relay_on", True),
     ("algorithm", "heating"),
+    ("signal_strength", 53),
+    ("alarm", None),
 ]
 
 

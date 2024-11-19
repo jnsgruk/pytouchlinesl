@@ -122,6 +122,21 @@ class Zone:
         """Return the zone's current algorithm, either `heating` or `cooling`."""
         return self._raw_data.zone.flags.algorithm
 
+    @property
+    def signal_strength(self) -> int | None:
+        """Return the signal strength of the zone."""
+        return self._raw_data.zone.signal_strength
+
+    @property
+    def alarm(self) -> Literal["sensor_damaged", "no_communication"] | None:
+        """Return the alarm state of the zone."""
+        state = self._raw_data.zone.zone_state
+        if state == "sensorDamaged":
+            return "sensor_damaged"
+        elif state == "noCommunication":
+            return "no_communication"
+        return None
+
     async def set_temperature(self, temperature: float):
         """Set a constant target temperature for the zone."""
         await self._client.set_zone_temperature(

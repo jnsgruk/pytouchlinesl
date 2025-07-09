@@ -10,7 +10,7 @@ classifiers = [
     "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
 ]
-dependencies = ["aiohttp", "pydantic"]
+dependencies = ["aiohttp", "pydantic>=2"]
 
 [project.optional-dependencies]
 dev = ["pytest", "pytest-asyncio", "ruff"]

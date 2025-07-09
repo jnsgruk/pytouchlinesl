@@ -6,10 +6,7 @@ tweaks to types and names.
 
 from typing import Any, Dict, List, Literal, Optional
 
-try:
-    from pydantic.v1 import BaseModel, Field
-except ImportError:
-    from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field
 
 
 class ZoneFlagsModel(BaseModel):

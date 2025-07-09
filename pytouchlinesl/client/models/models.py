@@ -168,7 +168,7 @@ class AccountModuleModel(BaseModel):
     country: Optional[str] = None
     gmt_id: Optional[int] = Field(None, alias="gmtId")
     gmt_time: Optional[str] = Field(None, alias="gmtTime")
-    postcode_policy_accepted: bool = Field(None, alias="postcodePolicyAccepted")
+    postcode_policy_accepted: Optional[bool] = Field(None, alias="postcodePolicyAccepted")
     style: Optional[str] = None
     version: Optional[str] = None
     company: Optional[str] = None

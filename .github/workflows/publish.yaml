@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install `uv`
         run: |
@@ -38,4 +38,4 @@ jobs:
           uvx --from build pyproject-build --installer uv
 
       - name: Publish to PyPi
-        uses: pypa/gh-action-pypi-publish@v1.12.4
+        uses: pypa/gh-action-pypi-publish@v1.13.0

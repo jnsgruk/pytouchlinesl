@@ -2717,6 +2717,12 @@
         "controllerName": "L-11",
         "mainControllerId": 87
       }
+    },
+    {
+      "id": 3,
+      "parentId": 0,
+      "type": "alarm",
+      "visibility": true
     }
   ],
   "tilesOrder": null,

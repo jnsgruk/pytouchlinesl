@@ -4,7 +4,7 @@ These are mostly auto-generated using responses received from the API, with some
 tweaks to types and names.
 """
 
-from typing import Any, Dict, List, Literal, Optional
+from typing import Any, Dict, List, Literal, Optional, Union
 
 from pydantic import BaseModel, Field
 
@@ -139,11 +139,11 @@ class ParamsModel(BaseModel):
 class TileModel(BaseModel):
     id: int
     parent_id: int = Field(..., alias="parentId")
-    type: int
-    menu_id: int = Field(..., alias="menuId")
-    order_id: Any = Field(..., alias="orderId")
+    type: Union[int, str]
+    menu_id: Optional[int] = Field(None, alias="menuId")
+    order_id: Optional[Any] = Field(None, alias="orderId")
     visibility: bool
-    params: ParamsModel
+    params: Optional[ParamsModel] = None
 
 
 class ModuleModel(BaseModel):

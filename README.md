@@ -48,6 +48,7 @@ import os
 
 from pytouchlinesl import TouchlineSL
 
+
 async def touchlinesl_example():
     tsl = TouchlineSL(
         username=os.getenv("TOUCHLINESL_LOGIN"),
@@ -66,6 +67,7 @@ async def touchlinesl_example():
     kitchen = await module.zone(2411)
     living_spaces = await module.schedule_by_name("Living Spaces")
     await kitchen.set_schedule(living_spaces.id)
+
 
 if __name__ == "__main__":
     asyncio.set_event_loop(asyncio.new_event_loop())
